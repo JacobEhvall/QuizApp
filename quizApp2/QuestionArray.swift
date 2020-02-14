@@ -55,7 +55,7 @@ class QuestionArray {
         questionsNES.append(q14)
         
         
-        let q15 = Question(image: "DuckHunt",questionText: "Ristar is a game to Genesis/GameGear which inspiered inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape",""], correct: 1)
+        let q15 = Question(image: "RistarPicture",questionText: "Ristar is a game to Mega Drive which inspiered inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape",""], correct: 1)
         questionsSEGA.append(q15)
         let q16 = Question(image: "DuckHunt",questionText: "One of the worst game ever made for Sega GameGear is?", answers: ["Dynamite Harry", "Shaq Fuu", "Comiz Zone","Sunset Riders"], correct: 1)
         questionsSEGA.append(q16)
@@ -71,13 +71,13 @@ class QuestionArray {
         questionsSEGA.append(q21)
         let q22 = Question(image: "DuckHunt", questionText: "To play games SEGA games on the japan console version Genesis, You can play with special device, which one?", answers: ["Power conveter", "Power Base Conveter","Power Backable","Backaable Play" ], correct: 1)
         questionsSEGA.append(q22)
-        let q23 = Question(image: "DuckHunt", questionText: "What color is the SEGA logo?", answers: ["Yellow", "Green", "Pink", "Blue"], correct: 3)
+        let q23 = Question(image: "SEGA1", questionText: "What color is the SEGA logo?", answers: ["Yellow", "Green", "Pink", "Blue"], correct: 3)
         questionsSEGA.append(q23)
         let q24 = Question(image: "DuckHunt", questionText: "What mascot is the SEGA company known for?", answers: ["Sonic", "Ristar", "Tails", "Alex the Kid"], correct: 0)
         questionsSEGA.append(q24)
         let q25 = Question(image: "DuckHunt", questionText: "What´s the name of Game Gear in USA?", answers: ["DreamCast", "Genesis", "SEGA Mastersystem", "SEGA game gear"], correct: 0)
         questionsSEGA.append(q25)
-        let q26 = Question(image: "DuckHunt", questionText: "When was SEGA founded?", answers: ["1945", "1940", "1939", "1938"], correct: 1)
+        let q26 = Question(image:"DuckHunt", questionText: "When was SEGA founded?", answers: ["1945", "1940", "1939", "1938"], correct: 1)
          questionsSEGA.append(q26)
 
         
