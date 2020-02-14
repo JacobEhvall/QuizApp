@@ -75,9 +75,9 @@ class QuestionArray {
         questionsSEGA.append(q23)
         let q24 = Question(image: "DuckHunt", questionText: "What mascot is the SEGA company known for?", answers: ["Sonic", "Ristar", "Tails", "Alex the Kid"], correct: 0)
         questionsSEGA.append(q24)
-        let q25 = Question(image: "DuckHunt", questionText: "What´s the name of Game Gear in USA?", answers: ["DreamCast", "Genesis", "SEGA Mastersystem", "SEGA game gear"], correct: 0)
+        let q25 = Question(image: "DuckHunt", questionText: "What´s the name of Gamegear in USA?", answers: ["DreamCast", "Genesis", "SEGA Mastersystem", "SEGA game gear"], correct: 0)
         questionsSEGA.append(q25)
-        let q26 = Question(image:"DuckHunt", questionText: "When was SEGA founded?", answers: ["1945", "1940", "1939", "1938"], correct: 1)
+        let q26 = Question(image:"SEGA Company", questionText: "When was SEGA founded?", answers: ["1945", "1940", "1939", "1938"], correct: 1)
          questionsSEGA.append(q26)
 
         
