@@ -413,6 +413,7 @@
         <image name="diamond" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="um2-6F-bnz"/>
         <segue reference="QJs-Ib-ZuX"/>
     </inferredMetricsTieBreakers>
 </document>
