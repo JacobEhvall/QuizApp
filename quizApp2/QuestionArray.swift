@@ -73,7 +73,7 @@ class QuestionArray {
         questionsSEGA.append(q22)
         let q23 = Question(image: "SEGA1", questionText: "What color is the SEGA logo?", answers: ["Yellow", "Green", "Pink", "Blue"], correct: 3)
         questionsSEGA.append(q23)
-        let q24 = Question(image: "DuckHunt", questionText: "What mascot is the SEGA company known for?", answers: ["Sonic", "Ristar", "Tails", "Alex the Kid"], correct: 0)
+        let q24 = Question(image: "SEGA macot", questionText: "What mascot is the SEGA company known for?", answers: ["Sonic", "Ristar", "Tails", "Alex the Kid"], correct: 0)
         questionsSEGA.append(q24)
         let q25 = Question(image: "DuckHunt", questionText: "What´s the name of Gamegear in USA?", answers: ["DreamCast", "Genesis", "SEGA Mastersystem", "SEGA game gear"], correct: 0)
         questionsSEGA.append(q25)
