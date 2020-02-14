@@ -8,6 +8,7 @@
 
 import Foundation
 
+// question class
 class Question {
     let questionImage : String
     let question: String
