@@ -13,9 +13,9 @@ class ViewController: UIViewController {
     var currentQuestionPos: Int = 0
     var questionsAnswered: Int = 0
     var score: Int = 0
-    var questions : [Question]! //= QuestionArray() // Tar in QuestionArray
+    var questions : [Question]!
     
-    // Connecting buttons, questionscounter(lblProgress), and the ScoreLabel
+   
     @IBOutlet var lblQuestion: UITextView!
     
     
@@ -122,7 +122,7 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: \(score)"
         lblProgress.text = "\(questionsAnswered + 1) /\(questions.count)"
     }
-    //Sets the Questions and the score/coins to 0
+    //Sets the Questions and the score to 0
     func restartGame(){
         score = 0
         questionsAnswered = 0
@@ -147,7 +147,7 @@ class ViewController: UIViewController {
     
 }
 
-
+// Kolla med David om Restart Button!
 
 
 
