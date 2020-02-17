@@ -70,8 +70,5 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
         
         return cell
     }
-    
-        
-       
        
 }
