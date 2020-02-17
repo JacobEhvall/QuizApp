@@ -39,13 +39,10 @@ class ViewController: UIViewController {
         setQuestion()
         loadNextQuestion()
         updateUI()
-        restartGame()
-        
-        
-    }
+        //restartGame()
+}
     
-    
-    
+ 
     // Submit an answer
     @IBAction func submit0(_ sender: Any) {
         checkAnswer(index: 0)
@@ -61,10 +58,8 @@ class ViewController: UIViewController {
     }
     @IBAction func submitAnswer3(_ sender: Any) {
         checkAnswer(index: 3)
+        
     }
-    
-
-    
     
     
     func checkAnswer(index: Int) {
@@ -122,11 +117,11 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: \(score)"
         lblProgress.text = "\(questionsAnswered + 1) /\(questions.count)"
     }
-    //Sets the Questions and the score to 0
-    func restartGame(){
-        score = 0
-        questionsAnswered = 0
-      }
+//    //Sets the Questions and the score to 0
+//    func restartGame(){
+//        score = 0
+//        questionsAnswered = 0
+//      }
     
     // Before we move to the results screen pass the how many we got correct, and the total number of questions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

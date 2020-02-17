@@ -19,6 +19,12 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
     @IBOutlet weak var lblProgress: UILabel!
     
    
+    @IBAction func restartGame(_ sender: Any) {
+       score = 0
+       ScoreTotal.text = "\(score)"
+    }
+    
+   
     
     var questions : [Question]!
    
