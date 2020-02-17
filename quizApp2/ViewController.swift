@@ -124,10 +124,9 @@ class ViewController: UIViewController {
     }
     //Sets the Questions and the score/coins to 0
     func restartGame(){
-        questionsAnswered = 0
         score = 0
-        
-    }
+        questionsAnswered = 0
+      }
     
     // Before we move to the results screen pass the how many we got correct, and the total number of questions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
