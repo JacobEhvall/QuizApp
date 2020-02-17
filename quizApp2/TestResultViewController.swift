@@ -21,7 +21,6 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
    
     @IBAction func restartGame(_ sender: Any) {
        score = 0
-       ScoreTotal.text = "\(score)"
     }
     
    
@@ -59,8 +58,10 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
         
         if questions[indexPath.row].answered {
             cell.backgroundColor = UIColor.green
+            cell.textLabel?.text = "Correct"
         } else {
             cell.backgroundColor = UIColor.red
+            cell.textLabel?.text = "Wrong"
         }
         
         
