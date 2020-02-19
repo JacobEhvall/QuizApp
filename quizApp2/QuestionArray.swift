@@ -33,7 +33,7 @@ class QuestionArray {
         questionsNES.append(q3)
         let q4 = Question(image: "Picture3", questionText: "In what year did the Nintendo 8 bit get to Sweden?", answers:["1989", "1994", "1986", "1991"], correct: 2)
         questionsNES.append(q4)
-        let q5 = Question(image: "Picture4", questionText: "Whats the name of the first Zelda game?", answers: ["A Link to Past", "Majoras Mask (for 64)", "The Legend of Zelda (NES)", "Zelda Links Awakening DX"], correct: 2)
+        let q5 = Question(image: "Picture4", questionText: "Whats the name of the first Zelda game?", answers: ["A Link to Past", "Majoras Mask (for 64)", "The Legend of Zelda", "Zelda Links Awakening DX"], correct: 2)
         questionsNES.append(q5)
         let q6 = Question(image: "Picture5",questionText: "Abiibos are small figures for the 3ds consoles and one more?", answers: ["WII U", "DS Lite", "Nintendo DS", "Game Gear"], correct: 0)
         questionsNES.append(q6)
@@ -117,7 +117,7 @@ class QuestionArray {
 
 
 
-
+// Skriv om frågan om Packman svarsalternativen!
 
 
 
