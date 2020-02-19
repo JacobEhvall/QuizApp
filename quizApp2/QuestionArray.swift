@@ -55,7 +55,7 @@ class QuestionArray {
         questionsNES.append(q14)
         
         
-        let q15 = Question(image: "RistarPicture",questionText: "Ristar is a game to Mega Drive which inspiered inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape",""], correct: 1)
+        let q15 = Question(image: "RistarPicture",questionText: "Ristar is a game to Mega Drive which inspiered inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape","triangle"], correct: 1)
         questionsSEGA.append(q15)
         let q16 = Question(image: "DuckHunt",questionText: "One of the worst game ever made for Sega MegaDrive is?", answers: ["Dynamite Harry", "Shaq Fuu", "Comiz Zone","Sunset Riders"], correct: 1)
         questionsSEGA.append(q16)

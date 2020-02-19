@@ -142,7 +142,7 @@ class ViewController: UIViewController {
     
 }
 
-// Kolla med David om Restart Button!
+
 
 
 
