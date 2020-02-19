@@ -29,11 +29,11 @@ class QuestionArray {
         questionsNES.append(q1)
         let q2 = Question(image: "Picture1",questionText: "In one of the game series there is one italian plumber who likes pasta, what is his name?", answers:["Wario","Mario","Peach","Toad"], correct: 1)
         questionsNES.append(q2)
-        let q3 = Question(image: "Picture2",questionText: "Whats the name of the ghosts in Pacman?", answers:["Gere,Terra,Core,Tink","Spooky,Spoon,Spotty,Buuu","Pinky,Inky,Clyde,Blinky","Mickro,Tin,Sparkle,Owy"], correct: 2)
+        let q3 = Question(image: "Picture2",questionText: "Whats the name of the ghosts in Pacman?", answers:["Gere,Terra,Core,Tink","Tech,Egoq,Cyb,Devi","Pinky,Inky,Clyde,Blinky","Mickro,Tin,Sparkle,Owy"], correct: 2)
         questionsNES.append(q3)
         let q4 = Question(image: "Picture3", questionText: "In what year did the Nintendo 8 bit get to Sweden?", answers:["1989", "1994", "1986", "1991"], correct: 2)
         questionsNES.append(q4)
-        let q5 = Question(image: "Picture4", questionText: "Whats the name of the first Zelda game?", answers: ["A Link to Past", "Majoras Mask (for 64)", "The Legend of Zelda", "Zelda Links Awakening DX"], correct: 2)
+        let q5 = Question(image: "Picture4", questionText: "Whats the name of the first Zelda game?", answers: ["A Link to Past", "Majoras Mask", "The Legend of Zelda", "Zelda Links Awakening DX"], correct: 2)
         questionsNES.append(q5)
         let q6 = Question(image: "Picture5",questionText: "Abiibos are small figures for the 3ds consoles and one more?", answers: ["WII U", "DS Lite", "Nintendo DS", "Game Gear"], correct: 0)
         questionsNES.append(q6)
@@ -55,13 +55,13 @@ class QuestionArray {
         questionsNES.append(q14)
         
         
-        let q15 = Question(image: "RistarPicture",questionText: "Ristar is a game to Mega Drive which inspiered inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape","triangle"], correct: 1)
+        let q15 = Question(image: "RistarPicture",questionText:"Ristar inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape","triangle"], correct: 1)
         questionsSEGA.append(q15)
         let q16 = Question(image: "DuckHunt",questionText: "One of the worst game ever made for Sega MegaDrive is?", answers: ["Dynamite Harry", "Shaq Fuu", "Comiz Zone","Sunset Riders"], correct: 1)
         questionsSEGA.append(q16)
-        let q17 = Question(image: "DuckHunt", questionText: "Some of the SEGA games are very collectible, expensive and rare, one of this are Tetris for Mega Drive.How much does it cost in SEK? (Swedish krowns)", answers: ["1000-1200","2000 - 2500", "3400 - 4000", "25000, 140 000"], correct: 3)
+        let q17 = Question(image: "DuckHunt", questionText: "How much does Tetris for SEGA Mega Drive cost,in SEK?", answers: ["1000-1200","2000 - 2500", "3400 - 4000", "25000, 140 000"], correct: 3)
         questionsSEGA.append(q17)
-        let q18 = Question(image: "MegaDrive", questionText: "Before SEGA was marketing their Mega Drive console in public the in-house name was?", answers:[ "M8-1541","M7-1833","MK-1601","MK-1221"], correct: 2)
+        let q18 = Question(image: "MegaDrive", questionText: "What´s the inhouse-name for Mega Drive?", answers:[ "M8-1541","M7-1833","MK-1601","MK-1221"], correct: 2)
         questionsSEGA.append(q18)
         let q19 = Question(image: "SEGA bild", questionText: "What´s the abbrevation for the SEGA name?", answers:[ "SErive GAmes","SElectic GAmes","SElected GAmes","SEgue GAmes"], correct: 0)
         questionsSEGA.append(q19)
@@ -69,7 +69,7 @@ class QuestionArray {
         questionsSEGA.append(q20)
        let q21 = Question(image: "DuckHunt", questionText: "SEGA has realsed a mini console of which of their consoles?", answers:[ "SEGA Saturn","SEGA Dreamcast","SEGA SG-1000","SEGA Megadrive"], correct: 3)
         questionsSEGA.append(q21)
-        let q22 = Question(image: "DuckHunt", questionText: "To play games SEGA games on the japan console version Genesis, You can play with special device, which one?", answers: ["Power conveter", "Power Base Conveter","Power Backable","Backaable Play" ], correct: 1)
+        let q22 = Question(image: "DuckHunt", questionText: "To play SEGA games on japan consoles,Genesis, You can play with?", answers: ["Power conveter", "Power Base Conveter","Power Backable","Backaable Play" ], correct: 1)
         questionsSEGA.append(q22)
         let q23 = Question(image: "SEGA1", questionText: "What color is the SEGA logo?", answers: ["Yellow", "Green", "Pink", "Blue"], correct: 3)
         questionsSEGA.append(q23)
@@ -117,7 +117,6 @@ class QuestionArray {
 
 
 
-// Skriv om frågan om Packman svarsalternativen!
 
 
 
