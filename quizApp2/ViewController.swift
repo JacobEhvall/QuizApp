@@ -94,6 +94,7 @@ class ViewController: UIViewController {
             //If there are no more questions show the results
         }   else {
             performSegue(withIdentifier: "ShowFinal", sender: nil)
+            audioPlayer?.stop()
         }
         
         
