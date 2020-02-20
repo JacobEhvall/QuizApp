@@ -48,16 +48,17 @@ class VideoGameViewController: UIViewController {
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
+
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToDisplayId {
             let destinationVC = segue.destination as! ViewController
-            
+
             destinationVC.questions = questions
-           //destinationVC.
-            
+            destinationVC.audioPlayer = audioPlayer
+           //destinationVC.music = music
+
         }
-        
+
     }
-    
-    
+   
 }

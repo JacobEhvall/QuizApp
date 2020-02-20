@@ -16,6 +16,8 @@ class ViewController: UIViewController {
     var questionsAnswered: Int = 0
     var score: Int = 0
     var questions : [Question]!
+    
+    var audioPlayer : AVAudioPlayer?
 
 
     @IBOutlet var lblQuestion: UITextView!
@@ -120,11 +122,6 @@ class ViewController: UIViewController {
         lblProgress.text = "\(questionsAnswered + 1) /\(questions.count)"
     }
     
-//    //Sets the Questions and the score to 0
-//    func restartGame(){
-//        score = 0
-//        questionsAnswered = 0
-//      }
     
     // Before we move to the results screen pass the how many we got correct, and the total number of questions
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -132,9 +129,7 @@ class ViewController: UIViewController {
             let vc = segue.destination as! TestResultViewController
             
             vc.questions = questions
-           
-            // vc.questionsAnswered = score
-           // vc.totalamountQuestion = questions.count
+            vc.audioPlayer = audioPlayer
 
         }
     }

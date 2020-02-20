@@ -7,10 +7,14 @@
 //
 
 import UIKit
+import AVFoundation
 
 class TestResultViewController: UIViewController , UITableViewDataSource {
     
     var score = 0
+    
+    var audioPlayer : AVAudioPlayer?
+    
     
     @IBOutlet weak var tableView: UITableView!
     
