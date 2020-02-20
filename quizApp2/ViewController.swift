@@ -6,7 +6,9 @@
 //  Copyright © 2020 Jacob  Ehnvall. All rights reserved.
 //
 
+
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     var currentQuestion : Question?
@@ -14,8 +16,8 @@ class ViewController: UIViewController {
     var questionsAnswered: Int = 0
     var score: Int = 0
     var questions : [Question]!
-    
-   
+
+
     @IBOutlet var lblQuestion: UITextView!
     
     
@@ -33,6 +35,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         guard let _ = questions else { print("error no questions"); return}
         
@@ -89,7 +92,6 @@ class ViewController: UIViewController {
             //If there are no more questions show the results
         }   else {
             performSegue(withIdentifier: "ShowFinal", sender: nil)
-            
         }
         
         
@@ -117,6 +119,7 @@ class ViewController: UIViewController {
         scoreLabel.text = "Score: \(score)"
         lblProgress.text = "\(questionsAnswered + 1) /\(questions.count)"
     }
+    
 //    //Sets the Questions and the score to 0
 //    func restartGame(){
 //        score = 0
@@ -128,15 +131,17 @@ class ViewController: UIViewController {
         if(segue.identifier == "ShowFinal") {
             let vc = segue.destination as! TestResultViewController
             
-            
             vc.questions = questions
-           // vc.questionsAnswered = score
+           
+            // vc.questionsAnswered = score
            // vc.totalamountQuestion = questions.count
+
         }
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+        
         // Dispose of any resources that can be recreated.
     }
     

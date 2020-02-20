@@ -11,6 +11,8 @@
 		0B4C64F623EB0A4D0056F304 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64F523EB0A4D0056F304 /* TestResultViewController.swift */; };
 		0B4D002623CB1F2A001A6A79 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D002523CB1F2A001A6A79 /* ResultsViewController.swift */; };
 		0B4DB1BA23E1C65600A4DB3D /* VideoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB1B923E1C65600A4DB3D /* VideoGameViewController.swift */; };
+		0B4DB78523FE7EF1001E9AE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4DB78423FE7EF1001E9AE7 /* AVFoundation.framework */; };
+		0B4DB78823FE8DB9001E9AE7 /* New Tires.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B4DB78723FE8DB9001E9AE7 /* New Tires.mp3 */; };
 		0BCBAF5C23D873F9008E0A1A /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCBAF5B23D873F9008E0A1A /* Question.swift */; };
 		0BCBAF5E23D87793008E0A1A /* QuestionArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BCBAF5D23D87793008E0A1A /* QuestionArray.swift */; };
 		0BEA659723C4DD6200D518E9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BEA659623C4DD6200D518E9 /* AppDelegate.swift */; };
@@ -26,6 +28,8 @@
 		0B4C64F523EB0A4D0056F304 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
 		0B4D002523CB1F2A001A6A79 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		0B4DB1B923E1C65600A4DB3D /* VideoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameViewController.swift; sourceTree = "<group>"; };
+		0B4DB78423FE7EF1001E9AE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0B4DB78723FE8DB9001E9AE7 /* New Tires.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "New Tires.mp3"; sourceTree = "<group>"; };
 		0BCBAF5B23D873F9008E0A1A /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		0BCBAF5D23D87793008E0A1A /* QuestionArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionArray.swift; sourceTree = "<group>"; };
 		0BEA659323C4DD6200D518E9 /* quizApp2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = quizApp2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,17 +47,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B4DB78523FE7EF1001E9AE7 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0B4DB78323FE7EF1001E9AE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB78423FE7EF1001E9AE7 /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0B4DB78623FE801A001E9AE7 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				0B4DB78723FE8DB9001E9AE7 /* New Tires.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		0BEA658A23C4DD6200D518E9 = {
 			isa = PBXGroup;
 			children = (
 				0BEA659523C4DD6200D518E9 /* quizApp2 */,
 				0BEA659423C4DD6200D518E9 /* Products */,
+				0B4DB78323FE7EF1001E9AE7 /* Frameworks */,
+				0B4DB78623FE801A001E9AE7 /* Sound */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +167,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0BEA65A323C4DD6300D518E9 /* LaunchScreen.storyboard in Resources */,
+				0B4DB78823FE8DB9001E9AE7 /* New Tires.mp3 in Resources */,
 				0BEA65A023C4DD6300D518E9 /* Assets.xcassets in Resources */,
 				0BEA659E23C4DD6200D518E9 /* Main.storyboard in Resources */,
 			);
@@ -317,7 +341,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Jacob.quizApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +358,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = Jacob.quizApp2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

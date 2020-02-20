@@ -7,8 +7,12 @@
 //
 
 import UIKit
+import AVFoundation
 
 class VideoGameViewController: UIViewController {
+    
+    var audioPlayer = AVAudioPlayer()
+    
     
     var name : String?
     
@@ -20,9 +24,20 @@ class VideoGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let sound = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+        }
+        catch {
+            print(error)
+        }
     }
+    
     @IBAction func NintendoPressed(_ sender: Any) {
+        audioPlayer.play()
         questions = QuestionArray().getNES()
+        
         
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
@@ -38,11 +53,11 @@ class VideoGameViewController: UIViewController {
             let destinationVC = segue.destination as! ViewController
             
             destinationVC.questions = questions
+           //destinationVC.
+            
         }
         
     }
     
     
-    
-}       
-
+}

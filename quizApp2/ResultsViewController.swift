@@ -28,6 +28,7 @@ class ResultsViewController: UIViewController {
         lblResults.text = "\(questionsAnswered ) out of \(totalamountQuestion) correct answers"
         
         
+        
         let title = "Points"
     
      
