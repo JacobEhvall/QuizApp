@@ -12,9 +12,13 @@ import AVFoundation
 class VideoGameViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
+ //   var audioPlayer2 = AVAudioPlayer()
     
     
     var name : String?
+    
+    var soundNintendo :String!
+    var soundSega :String!
     
     let segueToDisplayId = "segueToQuestions"
     
@@ -24,27 +28,41 @@ class VideoGameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let sound = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
+        
+        soundNintendo = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
+        soundSega = Bundle.main.path(forResource: "Adventures", ofType: "mp3")
+}
+    
+    @IBAction func NintendoPressed(_ sender: Any) {
+        
+        questions = QuestionArray().getNES()
         
         do {
-            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: sound!))
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundNintendo))
         }
         catch {
             print(error)
         }
-    }
-    
-    @IBAction func NintendoPressed(_ sender: Any) {
+        
+        
         audioPlayer.play()
-        questions = QuestionArray().getNES()
-        
-        
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
     
     @IBAction func segaPressed(_ sender: UIButton) {
+     
         questions = QuestionArray().getSEGA()
+        
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: URL(fileURLWithPath: soundSega))
+        }
+        catch {
+            print(error)
+        }
+        
+        audioPlayer.play()
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
