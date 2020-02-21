@@ -14,6 +14,7 @@ class Question {
     let answers: [String]
     let correctAnswer: Int
     var answered: Bool
+  
     
    
     

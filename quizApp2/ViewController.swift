@@ -32,6 +32,7 @@ class ViewController: UIViewController {
     @IBOutlet var lblProgress: UILabel!
     @IBOutlet var imageView: UIImageView!
     
+    @IBOutlet weak var SpeakerPicture: UIButton!
     
     
     
@@ -66,6 +67,17 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func muteMusic(_ sender: Any) {
+        if audioPlayer?.isPlaying == true {
+            audioPlayer?.stop()
+//            SpeakerPicture.image = UIImage(named: "speaker")
+        }
+        else{
+            audioPlayer?.play()
+//            SpeakerPicture.image = UIImage(named: "mute")
+
+        }
+    }
     
     func checkAnswer(index: Int) {
         if(index == currentQuestion?.correctAnswer) {
@@ -113,8 +125,7 @@ class ViewController: UIViewController {
         answer3.setTitle(question.answers[3], for: .normal)
         lblProgress.text = "\(currentQuestionPos + 1) / \(questions.count)"
         updateUI()
-        
-        
+    
     }
     
     // Update qustions and the collected points 

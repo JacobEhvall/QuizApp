@@ -12,13 +12,13 @@ import AVFoundation
 class VideoGameViewController: UIViewController {
     
     var audioPlayer = AVAudioPlayer()
- //   var audioPlayer2 = AVAudioPlayer()
     
     
     var name : String?
     
     var soundNintendo :String!
     var soundSega :String!
+  
     
     let segueToDisplayId = "segueToQuestions"
     
@@ -27,7 +27,6 @@ class VideoGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         soundNintendo = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
         soundSega = Bundle.main.path(forResource: "Adventures", ofType: "mp3")
@@ -73,7 +72,6 @@ class VideoGameViewController: UIViewController {
 
             destinationVC.questions = questions
             destinationVC.audioPlayer = audioPlayer
-           //destinationVC.music = music
 
         }
 
