@@ -57,9 +57,9 @@ class QuestionArray {
         
         let q15 = Question(image: "RistarPicture",questionText:"Ristar inspiered to the creation of the game character Sonic. What kind of figure is Ristar", answers: ["Cub", "Star", "spherical shape","triangle"], correct: 1)
         questionsSEGA.append(q15)
-        let q16 = Question(image: "DuckHunt",questionText: "One of the worst game ever made for Sega MegaDrive is?", answers: ["Dynamite Harry", "Shaq Fuu", "Comiz Zone","Sunset Riders"], correct: 1)
+        let q16 = Question(image: "sega-genesis",questionText: "One of the worst game ever made for Sega MegaDrive is?", answers: ["Dynamite Harry", "Shaq Fuu", "Comiz Zone","Sunset Riders"], correct: 1)
         questionsSEGA.append(q16)
-        let q17 = Question(image: "DuckHunt", questionText: "How much does Tetris for SEGA Mega Drive cost,in SEK?", answers: ["1000-1200","2000 - 2500", "3400 - 4000", "25000, 140 000"], correct: 3)
+        let q17 = Question(image: "DuckHunt", questionText: "How much does Tetris for SEGA Mega Drive cost,in SEK?", answers: ["1000-1200","2000 - 2500", "3400 - 4000", "25000 - 140 000"], correct: 3)
         questionsSEGA.append(q17)
         let q18 = Question(image: "MegaDrive", questionText: "What´s the inhouse-name for Mega Drive?", answers:[ "M8-1541","M7-1833","MK-1601","MK-1221"], correct: 2)
         questionsSEGA.append(q18)

@@ -317,10 +317,9 @@
                                 <rect key="frame" x="319" y="20" width="40" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <state key="normal" image="speaker.2.fill" catalog="system"/>
+                                <state key="normal" image="Sound"/>
                                 <connections>
-                                    <action selector="muteMusic:" destination="V6X-S4-wbP" eventType="touchUpInside" id="8EK-Fr-nm6"/>
-                                    <action selector="muteMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o6J-8R-mZ2"/>
+                                    <action selector="muteMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOf-6X-uAA"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -349,7 +348,7 @@
                     <navigationItem key="navigationItem" id="pL5-n0-7w3"/>
                     <connections>
                         <outlet property="Answer3" destination="K8l-Cv-ZjP" id="3QA-un-GAR"/>
-                        <outlet property="SpeakerPicture" destination="ZuH-zY-WdX" id="qEn-TD-Ghu"/>
+                        <outlet property="SpeakerPicture" destination="ZuH-zY-WdX" id="KOb-Pa-n5M"/>
                         <outlet property="answer0" destination="Ujk-wG-eE6" id="cUl-wo-GLk"/>
                         <outlet property="answer1" destination="4FA-bx-9qB" id="ki7-d9-MKg"/>
                         <outlet property="answer2" destination="huY-9F-eFU" id="oDx-P1-ShH"/>
@@ -676,8 +675,8 @@
         <image name="Nintendo Nes" width="1809" height="934"/>
         <image name="Picture0" width="583" height="675"/>
         <image name="Sega" width="801" height="382"/>
+        <image name="Sound" width="32" height="32"/>
         <image name="Startsida" width="1800" height="1200"/>
-        <image name="speaker.2.fill" catalog="system" width="64" height="48"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="um2-6F-bnz"/>

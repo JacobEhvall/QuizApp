@@ -67,15 +67,16 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func muteMusic(_ sender: Any) {
+    @IBAction func muteMusic(_ sender: UIButton) {
         if audioPlayer?.isPlaying == true {
+            let image = UIImage(named:"mute")
+            sender.setImage(UIImage(named:"mute"), for: UIControl.State.normal)
             audioPlayer?.stop()
-//            SpeakerPicture.image = UIImage(named: "speaker")
         }
         else{
             audioPlayer?.play()
-//            SpeakerPicture.image = UIImage(named: "mute")
-
+            let image = UIImage(named:"Sound")
+            sender.setImage(UIImage(named:"Sound"), for: UIControl.State.normal)
         }
     }
     
@@ -155,6 +156,8 @@ class ViewController: UIViewController {
 }
 
 
+// 1.UX-design byta bilder
+// 2.Sätta constrains på volymen
 
 
 
