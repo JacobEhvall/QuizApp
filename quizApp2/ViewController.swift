@@ -32,8 +32,6 @@ class ViewController: UIViewController {
     @IBOutlet var lblProgress: UILabel!
     @IBOutlet var imageView: UIImageView!
     
-    @IBOutlet weak var SpeakerPicture: UIButton!
-    
     
     
     override func viewDidLoad() {
@@ -48,7 +46,7 @@ class ViewController: UIViewController {
         //restartGame()
 }
     
- 
+    
     // Submit an answer
     @IBAction func submit0(_ sender: Any) {
         checkAnswer(index: 0)
@@ -156,9 +154,7 @@ class ViewController: UIViewController {
 }
 
 
-// 1.UX-design byta bilder
-// 2.Sätta constrains på volymen
-
+// fixa action länk!!
 
 
 

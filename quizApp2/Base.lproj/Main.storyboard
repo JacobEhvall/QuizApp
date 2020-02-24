@@ -313,13 +313,11 @@
                                     <constraint firstAttribute="height" constant="100" id="vfN-RH-KgG"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-zY-WdX">
-                                <rect key="frame" x="319" y="20" width="40" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="waK-lQ-DDJ">
+                                <rect key="frame" x="327" y="20" width="32" height="32"/>
                                 <state key="normal" image="Sound"/>
                                 <connections>
-                                    <action selector="muteMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vOf-6X-uAA"/>
+                                    <action selector="muteMusic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="opU-Jv-oPy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -330,10 +328,12 @@
                             <constraint firstItem="K8l-Cv-ZjP" firstAttribute="top" secondItem="huY-9F-eFU" secondAttribute="bottom" constant="20" id="9sR-cM-coa"/>
                             <constraint firstItem="huY-9F-eFU" firstAttribute="top" secondItem="4FA-bx-9qB" secondAttribute="bottom" constant="20" id="B0p-fz-DBP"/>
                             <constraint firstItem="4FA-bx-9qB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Eyq-0V-sQS"/>
+                            <constraint firstItem="waK-lQ-DDJ" firstAttribute="top" secondItem="xbp-W5-6Jy" secondAttribute="top" constant="20" id="GjK-Of-sVV"/>
                             <constraint firstItem="KEc-3H-LcI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hub-5Y-hmr"/>
                             <constraint firstItem="yjF-tA-XHH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="I7u-hp-NLJ"/>
                             <constraint firstItem="PjA-nY-xvd" firstAttribute="top" secondItem="KEc-3H-LcI" secondAttribute="bottom" constant="20" id="Ik6-no-XaF"/>
                             <constraint firstItem="yjF-tA-XHH" firstAttribute="bottom" secondItem="xbp-W5-6Jy" secondAttribute="bottom" id="Jh0-tb-kZZ"/>
+                            <constraint firstItem="xbp-W5-6Jy" firstAttribute="trailing" secondItem="waK-lQ-DDJ" secondAttribute="trailing" constant="16" id="Jwo-NJ-o4H"/>
                             <constraint firstItem="Gvd-Ab-EKb" firstAttribute="top" secondItem="xbp-W5-6Jy" secondAttribute="top" constant="20" id="O7o-8F-eP3"/>
                             <constraint firstItem="yjF-tA-XHH" firstAttribute="top" secondItem="K8l-Cv-ZjP" secondAttribute="bottom" constant="19" id="Y2t-Jh-4Zf"/>
                             <constraint firstItem="K8l-Cv-ZjP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bPr-xY-eXp"/>
@@ -348,7 +348,6 @@
                     <navigationItem key="navigationItem" id="pL5-n0-7w3"/>
                     <connections>
                         <outlet property="Answer3" destination="K8l-Cv-ZjP" id="3QA-un-GAR"/>
-                        <outlet property="SpeakerPicture" destination="ZuH-zY-WdX" id="KOb-Pa-n5M"/>
                         <outlet property="answer0" destination="Ujk-wG-eE6" id="cUl-wo-GLk"/>
                         <outlet property="answer1" destination="4FA-bx-9qB" id="ki7-d9-MKg"/>
                         <outlet property="answer2" destination="huY-9F-eFU" id="oDx-P1-ShH"/>
@@ -679,7 +678,6 @@
         <image name="Startsida" width="1800" height="1200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="um2-6F-bnz"/>
-        <segue reference="QJs-Ib-ZuX"/>
+        <segue reference="AFv-0P-oa5"/>
     </inferredMetricsTieBreakers>
 </document>
