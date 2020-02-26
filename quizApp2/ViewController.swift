@@ -154,7 +154,6 @@ class ViewController: UIViewController {
 }
 
 
-// fixa action länk!!
 
 
 
