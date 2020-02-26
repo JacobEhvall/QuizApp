@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+// Decration of each variabel and of what type.  
 class Question {
     let questionImage : String
     let question: String
@@ -17,7 +17,7 @@ class Question {
   
     
    
-    
+    // Initialize each value before use.
     init(image: String, questionText: String, answers: [String], correct: Int){
         self.questionImage = image
         self.question = questionText

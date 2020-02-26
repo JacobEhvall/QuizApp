@@ -11,18 +11,18 @@ import AVFoundation
 
 class TestResultViewController: UIViewController , UITableViewDataSource {
     
-    var score = 0
+    var score = 0 // Declaration of start count score = 0
     
-    var audioPlayer : AVAudioPlayer?
+    var audioPlayer : AVAudioPlayer? // Declaration of the audioplayer and of type which could be nil or have a sound.
     
-    
+    // Connection/ Outlets for tableView,ScoreTotal, and lblProgress showing your results.
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet weak var ScoreTotal: UILabel!
     
     @IBOutlet weak var lblProgress: UILabel!
     
-   
+   // ActionButton to restart the Quiz the score will be restored to 0.
     @IBAction func restartGame(_ sender: Any) {
        score = 0
     }
@@ -36,20 +36,22 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
         super.viewDidLoad()
         
        
-
+        // Checks correct answered questions
         for question in questions {
             if question.answered {
                 score += 1
             }
         }
+        //Show Your total score and the total correct of answered questions.
         ScoreTotal.text = "\(score)"
         lblProgress.text = "You got \(score) correct, out of \(questions.count) questions"
         
         
-       //print("score: \(score) antal: \(questions.count)")
         
-        
+        //Says that we are the datasSourse to the tableView
         tableView.dataSource = self
+        
+    // Counts and displays the cells in the tableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -59,7 +61,8 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellId", for: indexPath) as! PictureCell
 
-        
+        /* Checks if the answered cell is right or wrong
+         if it´s correct it will be green, wrong it will be red */
         if questions[indexPath.row].answered {
             cell.backgroundColor = UIColor.green
             cell.textLabel?.text = "Correct"
@@ -68,8 +71,7 @@ class TestResultViewController: UIViewController , UITableViewDataSource {
             cell.textLabel?.text = "Wrong"
         }
         
-        
-        //cell.textLabel?.text = String(questions[indexPath.row].answered)  Skriver ut true eller false i tableviewn
+        // Display the image for each tableview cell.
         cell.picture.image =  UIImage(named: questions[indexPath.row].questionImage)
         
         return cell

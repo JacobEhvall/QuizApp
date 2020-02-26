@@ -10,7 +10,7 @@
 import UIKit
 import AVFoundation
 
-// declaration of each variabel.
+// Declaration of each variabel.
 class ViewController: UIViewController {
     var currentQuestion : Question?
     var currentQuestionPos: Int = 0
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // check if there is any questions
+        // Check if there is any questions
         guard let _ = questions else { print("error no questions"); return}
         
         setQuestion()
