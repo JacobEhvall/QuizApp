@@ -68,13 +68,13 @@ class ViewController: UIViewController {
     @IBAction func muteMusic(_ sender: UIButton) {
         if audioPlayer?.isPlaying == true {
             let image = UIImage(named:"mute")
-            sender.setImage(UIImage(named:"mute"), for: UIControl.State.normal)
+            sender.setImage(UIImage(named:"mute"), for: .normal)
             audioPlayer?.stop()
         }
         else{
             audioPlayer?.play()
             let image = UIImage(named:"Sound")
-            sender.setImage(UIImage(named:"Sound"), for: UIControl.State.normal)
+            sender.setImage(UIImage(named:"Sound"), for: .normal)
         }
     }
     

@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// Picture cell shows image from question in tableview.
 class PictureCell: UITableViewCell {
     
     

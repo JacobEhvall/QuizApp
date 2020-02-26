@@ -6,6 +6,7 @@
 //  Copyright © 2020 Jacob  Ehnvall. All rights reserved.
 //
 
+// import diffrent packages, declare a strings for music, and get the player to play music (NES and SEGA)
 import UIKit
 import AVFoundation
 
@@ -27,6 +28,10 @@ class VideoGameViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+
+//       Get the music from the catecorie choose, takes the music name and of which filetype.
+//       When button pressed it playes the music and get the questions from array NES/SEGA.
         
         soundNintendo = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
         soundSega = Bundle.main.path(forResource: "Adventures", ofType: "mp3")
