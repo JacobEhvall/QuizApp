@@ -10,6 +10,7 @@
 import UIKit
 import AVFoundation
 
+// declaration of each variabel.
 class ViewController: UIViewController {
     var currentQuestion : Question?
     var currentQuestionPos: Int = 0
@@ -19,7 +20,7 @@ class ViewController: UIViewController {
     
     var audioPlayer : AVAudioPlayer?
 
-
+    // make a connection for each thing
     @IBOutlet var lblQuestion: UITextView!
     
     
@@ -37,7 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        // check if there is any questions
         guard let _ = questions else { print("error no questions"); return}
         
         setQuestion()
@@ -47,7 +48,7 @@ class ViewController: UIViewController {
 }
     
     
-    // Submit an answer
+    // submit/action button check which button user has pressed
     @IBAction func submit0(_ sender: Any) {
         checkAnswer(index: 0)
         
@@ -64,6 +65,8 @@ class ViewController: UIViewController {
         checkAnswer(index: 3)
         
     }
+    /* Submit/action button to choose if music should play or not(mute)
+    then the image diplay if music is playing or not*/
     
     @IBAction func muteMusic(_ sender: UIButton) {
         if audioPlayer?.isPlaying == true {
@@ -77,6 +80,9 @@ class ViewController: UIViewController {
             sender.setImage(UIImage(named:"Sound"), for: .normal)
         }
     }
+    
+    /* Function which check if the buttons index:Int are the correct answer
+     and then display next question and score, if it's not correct it load next question */
     
     func checkAnswer(index: Int) {
         if(index == currentQuestion?.correctAnswer) {
@@ -96,13 +102,15 @@ class ViewController: UIViewController {
     func loadNextQuestion() {
         
         
-        // Show next question
+        /* Checks if the QuestionPosition is´nt out of range and then add to next question.
+         When all questions are showed it get to */
+        
         if(currentQuestionPos < questions.count) {
             
             currentQuestion = questions[currentQuestionPos]
             setQuestion()
             currentQuestionPos += 1
-            //If there are no more questions show the results
+           //If there are no more questions it will go to the segue with the identifier "ShowFinal"
         }   else {
             performSegue(withIdentifier: "ShowFinal", sender: nil)
             audioPlayer?.stop()
@@ -111,7 +119,8 @@ class ViewController: UIViewController {
         
     }
     
-    // Set labels and buttions for the current question
+    /* Sets labels,image for question and buttons with alternative choices for current question,
+     when button pressed scoreLabel and progress will be updated, we also check if there is an question*/
     func setQuestion() {
         
         guard  let question = currentQuestion else {return}
@@ -127,14 +136,15 @@ class ViewController: UIViewController {
     
     }
     
-    // Update qustions and the collected points 
+    // Update qustion, show how many questions and the collected score
     func updateUI() {
         scoreLabel.text = "Score: \(score)"
         lblProgress.text = "\(questionsAnswered + 1) /\(questions.count)"
     }
     
     
-    // Before we move to the results screen pass the how many we got correct, and the total number of questions
+    /* When we move to the results screen/ShowFinal we pass how many
+    correct answers we got, and the total number of questions */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ShowFinal") {
             let vc = segue.destination as! TestResultViewController

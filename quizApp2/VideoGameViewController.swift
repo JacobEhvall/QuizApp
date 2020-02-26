@@ -6,7 +6,8 @@
 //  Copyright © 2020 Jacob  Ehnvall. All rights reserved.
 //
 
-// import diffrent packages, declare a strings for music, and get the player to play music (NES and SEGA)
+/* import diffrent packages,
+declare a strings for music, and get the player to play music (NES and SEGA)*/
 import UIKit
 import AVFoundation
 
@@ -30,13 +31,13 @@ class VideoGameViewController: UIViewController {
         super.viewDidLoad()
         
 
-//       Get the music from the catecorie choose, takes the music name and of which filetype.
-//       When button pressed it playes the music and get the questions from array NES/SEGA.
+      /* Take in music to each button, a music and of which filetype.
+      It will then play the music from either NES or SEGA. */
         
         soundNintendo = Bundle.main.path(forResource: "New Tires", ofType: "mp3")
         soundSega = Bundle.main.path(forResource: "Adventures", ofType: "mp3")
 }
-    
+    // When button Nintendo is pressed it gets the questions from NES array and play the Nintendo music.
     @IBAction func NintendoPressed(_ sender: Any) {
         
         questions = QuestionArray().getNES()
@@ -53,7 +54,7 @@ class VideoGameViewController: UIViewController {
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
-    
+    // When button SEGA is pressed it gets the questions from SEGA array and play the SEGA music.
     @IBAction func segaPressed(_ sender: UIButton) {
      
         questions = QuestionArray().getSEGA()
@@ -70,7 +71,6 @@ class VideoGameViewController: UIViewController {
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
-
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == segueToDisplayId {
             let destinationVC = segue.destination as! ViewController
