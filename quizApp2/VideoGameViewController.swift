@@ -20,6 +20,8 @@ class VideoGameViewController: UIViewController {
     
     var soundNintendo :String!
     var soundSega :String!
+    
+
   
     
     let segueToDisplayId = "segueToQuestions"
@@ -51,6 +53,7 @@ class VideoGameViewController: UIViewController {
         
         
         audioPlayer.play()
+        audioPlayer.numberOfLoops = -1
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
@@ -68,6 +71,7 @@ class VideoGameViewController: UIViewController {
         }
         
         audioPlayer.play()
+        audioPlayer.numberOfLoops = -1
         performSegue(withIdentifier: segueToDisplayId, sender: self)
     }
     
