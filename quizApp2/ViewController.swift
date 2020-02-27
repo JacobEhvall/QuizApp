@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     
     var audioPlayer : AVAudioPlayer?
 
-    // make a connection for each thing
+    // Make a connection
     @IBOutlet var lblQuestion: UITextView!
     
     
@@ -38,7 +38,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Check if there is any questions
+        // Guard will exit questions if the condition aren´t met.
         guard let _ = questions else { print("error no questions"); return}
         
         setQuestion()
@@ -102,8 +102,7 @@ class ViewController: UIViewController {
     func loadNextQuestion() {
         
         
-        /* Checks if the QuestionPosition is´nt out of range and then add to next question.
-         When all questions are showed it get to */
+        /* Checks if the QuestionPosition is´nt out of range and then add to next question.*/
         
         if(currentQuestionPos < questions.count) {
             
@@ -143,7 +142,7 @@ class ViewController: UIViewController {
     }
     
     
-    /* When we move to the results screen/ShowFinal we pass how many
+    /* When we move to the resultsscreen which have a identifier "ShowFinal" we pass how many
     correct answers we got, and the total number of questions */
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "ShowFinal") {

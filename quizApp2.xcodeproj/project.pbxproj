@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0B4C64EE23EAF1D60056F304 /* PictureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64ED23EAF1D60056F304 /* PictureCell.swift */; };
 		0B4C64F623EB0A4D0056F304 /* TestResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4C64F523EB0A4D0056F304 /* TestResultViewController.swift */; };
-		0B4D002623CB1F2A001A6A79 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4D002523CB1F2A001A6A79 /* ResultsViewController.swift */; };
 		0B4DB1BA23E1C65600A4DB3D /* VideoGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B4DB1B923E1C65600A4DB3D /* VideoGameViewController.swift */; };
 		0B4DB78523FE7EF1001E9AE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B4DB78423FE7EF1001E9AE7 /* AVFoundation.framework */; };
 		0B4DB78823FE8DB9001E9AE7 /* New Tires.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0B4DB78723FE8DB9001E9AE7 /* New Tires.mp3 */; };
@@ -27,7 +26,6 @@
 /* Begin PBXFileReference section */
 		0B4C64ED23EAF1D60056F304 /* PictureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PictureCell.swift; sourceTree = "<group>"; };
 		0B4C64F523EB0A4D0056F304 /* TestResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestResultViewController.swift; sourceTree = "<group>"; };
-		0B4D002523CB1F2A001A6A79 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		0B4DB1B923E1C65600A4DB3D /* VideoGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoGameViewController.swift; sourceTree = "<group>"; };
 		0B4DB78423FE7EF1001E9AE7 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0B4DB78723FE8DB9001E9AE7 /* New Tires.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "New Tires.mp3"; sourceTree = "<group>"; };
@@ -102,7 +100,6 @@
 				0BEA659823C4DD6200D518E9 /* SceneDelegate.swift */,
 				0BEA659A23C4DD6200D518E9 /* ViewController.swift */,
 				0B4DB1B923E1C65600A4DB3D /* VideoGameViewController.swift */,
-				0B4D002523CB1F2A001A6A79 /* ResultsViewController.swift */,
 				0BEA659C23C4DD6200D518E9 /* Main.storyboard */,
 				0BEA659F23C4DD6300D518E9 /* Assets.xcassets */,
 				0BEA65A123C4DD6300D518E9 /* LaunchScreen.storyboard */,
@@ -192,7 +189,6 @@
 				0B4C64EE23EAF1D60056F304 /* PictureCell.swift in Sources */,
 				0B4C64F623EB0A4D0056F304 /* TestResultViewController.swift in Sources */,
 				0BEA659923C4DD6200D518E9 /* SceneDelegate.swift in Sources */,
-				0B4D002623CB1F2A001A6A79 /* ResultsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +333,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC2KDZ3PB4;
 				INFOPLIST_FILE = quizApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -354,6 +351,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RC2KDZ3PB4;
 				INFOPLIST_FILE = quizApp2/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

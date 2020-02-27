@@ -10,15 +10,15 @@ import Foundation
 
 class QuestionArray {
     
-    // Declared variabel that has an Question in either NES or SEGA.
+    // Declared variabel that holds questions in an Questionarray on for NES and one for SEGA.
     var questionsNES = [Question]()
     var questionsSEGA = [Question]()
     
-    // The index start count from 0.
+    // The index in Answers in QuestionArray start count from 0.
     private var currentIndex = 0
     
-    /* Every question has a number of type Int
-    and count every question in NES or SEGA. */
+    /* Every question in NES or SEGA
+    counts and is a type of Int. */
     
     var countNES : Int {
         return questionsNES.count
@@ -28,7 +28,7 @@ class QuestionArray {
     }
     
     
-    // An init() function which hold the Question in questions for NES and SEGA.
+    // An init() function which hold a Question in questions for NES and SEGA.
     init() {
         let q1 = Question(image: "Picture0",questionText: "In the Super Mario games what can you not get?", answers: ["Stones", "Golden coins", "Mushrooms", "Stars"], correct: 0)
         questionsNES.append(q1)
@@ -89,12 +89,11 @@ class QuestionArray {
 
         
         
-        // Shuffle the questions for NES/SEGA
+        // Shuffle the questions for NES and SEGA
         questionsNES.shuffle()
         questionsSEGA.shuffle()
         
-    /* Get a Question from NES or SEGA
-    and it will either return questionsNES or questionSEGA.*/
+    /* Return questionsNES or questionSEGA.*/
     }
     func getNES() -> [Question] {
         return questionsNES

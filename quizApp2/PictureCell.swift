@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-// Picture cell shows image from QuestionArray in tableview.
+// Picturecell shows image from QuestionArray into tableview.
 class PictureCell: UITableViewCell {
     
-    // Make a connection/Outlet to PictureCell.
+    // Makes a connection to PictureCell.
     @IBOutlet weak var picture: UIImageView!
     
 }

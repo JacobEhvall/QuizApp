@@ -289,7 +289,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="                                                                            QUESTION   FIELD" textAlignment="center" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KEc-3H-LcI">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="                                                                            QUESTION   FIELD" textAlignment="center" adjustsFontForContentSizeCategory="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEc-3H-LcI">
                                 <rect key="frame" x="17" y="140" width="341" height="131"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="341" id="w6h-XS-6vf"/>
